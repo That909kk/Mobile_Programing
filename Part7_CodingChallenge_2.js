@@ -8,7 +8,7 @@ function convertDogAge(data) {
     let humanAge = data.map(age => age <= 2 ? 2 * age : 16 + age * 4);
     let needAge = humanAge.filter(age => age >= 18);
     let averageAge = needAge.reduce((acc, age) => acc + age, 0) / needAge.length;
-    console.log(averageAge);
+    console.log("Average human age of dogs is: " + averageAge);
     
 };
 convertDogAge(Data1);
