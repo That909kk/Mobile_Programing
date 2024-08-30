@@ -1,12 +1,32 @@
 // 27. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
-let arr = [1, 2, 3,6,3, 4,8, 5, 6, 7, 8, 9, 10,10];
-let fn = (arr) => {
-    let set = new Set(arr);
-    return Array.from(set);
-}
-console.log(fn(arr));
+// let arr = [1, 2, 3,6,3, 4,8, 5, 6, 7, 8, 9, 10,10];
+// let fn = (arr) => {
+//     let set = new Set(arr);
+//     return Array.from(set);
+// }
+// console.log(fn(arr));
 // 28. Calculate the sum of first 100 prime numbers and return them in an array
+// let isPrime = (num) => {
+//     if (num < 2) return false;
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) return false;
+//     }
+//     return true;
+// }
+// let first100Primes = () => {
+//     let primes = [];
+//     for (let i = 2; primes.length < 100; i++) {
+//         if (isPrime(i)) primes.push(i);
+//     }
+//    return primes;
+// }
+// let arr100Primes = first100Primes();
+// console.log(arr100Primes);
+// let sumArr = arr100Primes.reduce((acc, cur) => acc + cur, 0);
+// console.log(sumArr);
 // 29. Print the distance between the first 100 prime numbers
+
+
 // 30. Create a function that will add two positive numbers of indefinite size. The numbers
 // are received as strings and the result should be also provided as string.
 // 31. Create a function that will return the number of words in a text
