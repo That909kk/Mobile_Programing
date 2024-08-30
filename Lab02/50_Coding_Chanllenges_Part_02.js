@@ -25,8 +25,27 @@
 // let sumArr = arr100Primes.reduce((acc, cur) => acc + cur, 0);
 // console.log(sumArr);
 // 29. Print the distance between the first 100 prime numbers
-
-
+let isPrime = (num) => {
+    if (num < 2) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+let first100Primes = () => {
+    let primes = [];
+    for (let i = 2; primes.length < 100; i++) {
+        if (isPrime(i)) primes.push(i);
+    }
+    return primes;
+}
+let arr100Primes = first100Primes();
+let distance = [];
+for (let i = 0; i < arr100Primes.length - 1; i++) {
+    distance.push(arr100Primes[i + 1] - arr100Primes[i]);
+}
+console.log(arr100Primes);
+console.log(distance);
 // 30. Create a function that will add two positive numbers of indefinite size. The numbers
 // are received as strings and the result should be also provided as string.
 // 31. Create a function that will return the number of words in a text
