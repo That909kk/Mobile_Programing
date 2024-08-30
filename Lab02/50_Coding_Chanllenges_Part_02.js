@@ -48,15 +48,18 @@
 // console.log(distance);
 // 30. Create a function that will add two positive numbers of indefinite size. The numbers
 // are received as strings and the result should be also provided as string.
-let sumPositive = (a,b)=>{
-    return String(a+b) ;
-} 
-var Str = sumPositive(100,600);
-console.log(Str);
-console.log(typeof(Str));
-
-
+// let sumPositive = (a,b)=>{
+//     return String(a+b) ;
+// } 
+// var Str = sumPositive(100,600);
+// console.log(Str);
+// console.log(typeof(Str));
 // 31. Create a function that will return the number of words in a text
+let numOfText = (str) => {
+    return str.split(" ").length;
+};
+let text ="Le Minh That";
+console.log(numOfText(text));
 // 32. Create a function that will capitalize the first letter of each word in a text
 // 33. Calculate the sum of numbers received in a comma delimited string
 // 34. Create a function that returns an array with words inside a text.
