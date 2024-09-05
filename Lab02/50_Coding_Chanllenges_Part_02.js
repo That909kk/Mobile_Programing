@@ -80,13 +80,18 @@
 // };
 // console.log(arrWords(text));
 // 35. Create a function to convert a CSV text to a “bi-dimensional” array
-let text = "a,b,c,d\ne,f,g,h\ni,j,k,l";
-let csvToBiArray = (text) => {
-    return text.split("\n").map(row => row.split(","));
-}
-csvToBiArray(text).forEach(row => console.log(row));
-console.log(csvToBiArray(text));
+// let text = "a,b,c,d\ne,f,g,h\ni,j,k,l";
+// let csvToBiArray = (text) => {
+//     return text.split("\n").map(row => row.split(","));
+// }
+// csvToBiArray(text).forEach(row => console.log(row));
+// console.log(csvToBiArray(text));
 // 36. Create a function that converts a string to an array of characters
+let text = "Le Minh That";
+let strToArr = (str) => {
+    return str.split("");
+};
+console.log(strToArr(text));
 // 37. Create a function that will convert a string in an array containing the ASCII codes of each character
 // 38. Create a function that will convert an array containing ASCII codes in a string
 // 39. Implement the Caesar cypher
