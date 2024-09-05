@@ -162,21 +162,27 @@
 //   }
 //   console.log(areIntersecting(circle1, circle2));
 // 43. Create a function that will receive a bi-dimensional array as argument and a number and will extract as a unidimensional array the column specified by the number
-let arr = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
-let extractColumn = (arr, col) => {
-    return arr.map(row => row[col]);
+// let arr = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+// let extractColumn = (arr, col) => {
+//     return arr.map(row => row[col]);
+// }
+// console.log(extractColumn(arr, 1));
+// 44. Create a function that will convert a string containing a binary number into a number
+// let num = "101010101";
+// let binToNum = (str) => {
+//     return parseInt(str, 2);
+// }
+// console.log(binToNum(num));
+// 45. Create a function to calculate the sum of all the numbers in a jagged array(contains numbers or other arrays of numbers on an unlimited number oflevels)
+let arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+let sumJagged = (arr) => {
+    return arr.flat(Infinity).reduce((acc, cur) => acc + cur, 0);
 }
-console.log(extractColumn(arr, 1));
-
-// 44. Create a function that will convert a string containing a binary number into a
-// number
-// 45. Create a function to calculate the sum of all the numbers in a jagged array
-// (contains numbers or other arrays of numbers on an unlimited number of
-// levels)
+console.log(sumJagged(arr));
 // 46. Find the maximum number in a jagged array of numbers or array of numbers
 // 47. Deep copy a jagged array with numbers or other arrays in a new array
 // 48. Create a function to return the longest word in a string
