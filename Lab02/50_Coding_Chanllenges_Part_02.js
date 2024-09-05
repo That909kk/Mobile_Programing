@@ -199,15 +199,35 @@
 //     console.log(arrCopy[i]);
 // }
 // 48. Create a function to return the longest word in a string
-let text = "1 con gà xòe ra 2 cái c";
-let longestWord = (str) => {
-    return str.split(" ").reduce((acc, cur) => acc.length >= cur.length ? acc : cur, "");
-}
-console.log(longestWord(text));
-
+// let text = "1 con gà xòe ra 2 cái c";
+// let longestWord = (str) => {
+//     return str.split(" ").reduce((acc, cur) => acc.length >= cur.length ? acc : cur, "");
+// }
+// console.log(longestWord(text));
 // 49. Shuffle an array of strings
-// 50. Create a function that will receive n as argument and return an array of n
-// random numbers from 1 to n. The numbers should be unique inside the array.
+// let arr = ["Le", "Minh", "That"];
+// let shuffle = (arr) => {
+//     for (let i = arr.length - 1; i > 0; i--) {
+//         let j = Math.floor(Math.random() * (i + 1));
+//         [arr[i], arr[j]] = [arr[j], arr[i]];
+//     }
+//     return arr;
+// }
+// console.log(shuffle(arr));
+// 50. Create a function that will receive n as argument and return an array of n random numbers from 1 to n. The numbers should be unique inside the array.
+let n = 100;
+let randomNumbers = (n) => {
+    let arr = [];
+    for (let i = 1; i <= n; i++) {
+        arr.push(i);
+    }
+    for (let i = arr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+console.log(randomNumbers(n));
 // 51. Find the frequency of letters inside a string. Return the result as an array of
 // arrays. Each subarray has 2 elements: letter and number of occurrences.
 // 52. Calculate Fibonacci(500) with high precision (all digits)
