@@ -184,13 +184,20 @@
 // }
 // console.log(sumJagged(arr));
 // 46. Find the maximum number in a jagged array of numbers or array of numbers
-let arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
-let maxJagged = (arr) => {
-    return Math.max(...arr.flat(Infinity));
-}
-console.log(maxJagged(arr));
-
+// let arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+// let maxJagged = (arr) => {
+//     return Math.max(...arr.flat(Infinity));
+// }
+// console.log(maxJagged(arr));
 // 47. Deep copy a jagged array with numbers or other arrays in a new array
+let arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+let deepCopy = (arr) => {
+    return JSON.parse(JSON.stringify(arr));
+}
+let arrCopy = deepCopy(arr);
+for (let i = 0; i < arr.length; i++) {
+    console.log(arrCopy[i]);
+}
 // 48. Create a function to return the longest word in a string
 // 49. Shuffle an array of strings
 // 50. Create a function that will receive n as argument and return an array of n
