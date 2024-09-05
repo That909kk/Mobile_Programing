@@ -178,12 +178,18 @@
 // }
 // console.log(binToNum(num));
 // 45. Create a function to calculate the sum of all the numbers in a jagged array(contains numbers or other arrays of numbers on an unlimited number oflevels)
-let arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
-let sumJagged = (arr) => {
-    return arr.flat(Infinity).reduce((acc, cur) => acc + cur, 0);
-}
-console.log(sumJagged(arr));
+// let arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+// let sumJagged = (arr) => {
+//     return arr.flat(Infinity).reduce((acc, cur) => acc + cur, 0);
+// }
+// console.log(sumJagged(arr));
 // 46. Find the maximum number in a jagged array of numbers or array of numbers
+let arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+let maxJagged = (arr) => {
+    return Math.max(...arr.flat(Infinity));
+}
+console.log(maxJagged(arr));
+
 // 47. Deep copy a jagged array with numbers or other arrays in a new array
 // 48. Create a function to return the longest word in a string
 // 49. Shuffle an array of strings
