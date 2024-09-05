@@ -229,19 +229,36 @@
 // }
 // console.log(randomNumbers(n));
 // 51. Find the frequency of letters inside a string. Return the result as an array of arrays. Each subarray has 2 elements: letter and number of occurrences.
-let text = "Le Minh That";
-let frequencyLetters = (str) => {
-    let obj = {};
-    for (let char of str) {
-        if (char !== " ") {
-            obj[char] = obj[char] ? obj[char] + 1 : 1;
-        }
-    }
-    return Object.entries(obj);
-}
-frequencyLetters(text).forEach(arr => console.log(arr));
-
+// let text = "Le Minh That";
+// let frequencyLetters = (str) => {
+//     let obj = {};
+//     for (let char of str) {
+//         if (char !== " ") {
+//             obj[char] = obj[char] ? obj[char] + 1 : 1;
+//         }
+//     }
+//     return Object.entries(obj);
+// }
+// frequencyLetters(text).forEach(arr => console.log(arr));
 // 52. Calculate Fibonacci(500) with high precision (all digits)
+// let fi = 500;
+// let fibonacci =(n)=>{
+//     let arr = [0n, 1n];
+//     for (let i = 2; i <= n; i++) {
+//         arr.push(arr[i - 1] + arr[i - 2]);
+//     }
+//     return arr[n];
+// }
+// console.log(fibonacci(fi).toString());
 // 53. Calculate 70! with high precision (all digits)
+// let n = 70;
+// let factorial = (n) => {
+//     let result = 1n;
+//     for (let i = 1n; i <= n; i++) {
+//         result *= i;
+//     }
+//     return result;
+// }
+// console.log(factorial(n).toString());
 
 
