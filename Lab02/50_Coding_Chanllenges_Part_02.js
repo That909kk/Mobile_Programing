@@ -93,13 +93,17 @@
 // };
 // console.log(strToArr(text));
 // 37. Create a function that will convert a string in an array containing the ASCII codes of each character
-let text = "Le Minh That";
-let strToASCII = (str) => {
-    return str.split("").map(char => char.charCodeAt(0));
-};
-console.log(strToASCII(text));
-
+// let text = "Le Minh That";
+// let strToASCII = (str) => {
+//     return str.split("").map(char => char.charCodeAt(0));
+// };
+// console.log(strToASCII(text));
 // 38. Create a function that will convert an array containing ASCII codes in a string
+let arr = [76, 101, 32, 77, 105, 110, 104, 32, 84, 104, 97, 116];
+let asciiToStr = (arr) => {
+    return arr.map(code => String.fromCharCode(code)).join("");
+};
+console.log(asciiToStr(arr));
 // 39. Implement the Caesar cypher
 // 40. Implement the bubble sort algorithm for an array of numbers
 // 41. Create a function to calculate the distance between two points defined by their x, y
