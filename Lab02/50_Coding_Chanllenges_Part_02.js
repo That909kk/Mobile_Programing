@@ -190,15 +190,21 @@
 // }
 // console.log(maxJagged(arr));
 // 47. Deep copy a jagged array with numbers or other arrays in a new array
-let arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
-let deepCopy = (arr) => {
-    return JSON.parse(JSON.stringify(arr));
-}
-let arrCopy = deepCopy(arr);
-for (let i = 0; i < arr.length; i++) {
-    console.log(arrCopy[i]);
-}
+// let arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+// let deepCopy = (arr) => {
+//     return JSON.parse(JSON.stringify(arr));
+// }
+// let arrCopy = deepCopy(arr);
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arrCopy[i]);
+// }
 // 48. Create a function to return the longest word in a string
+let text = "1 con gà xòe ra 2 cái c";
+let longestWord = (str) => {
+    return str.split(" ").reduce((acc, cur) => acc.length >= cur.length ? acc : cur, "");
+}
+console.log(longestWord(text));
+
 // 49. Shuffle an array of strings
 // 50. Create a function that will receive n as argument and return an array of n
 // random numbers from 1 to n. The numbers should be unique inside the array.
