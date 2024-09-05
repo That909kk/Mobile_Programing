@@ -105,20 +105,34 @@
 // };
 // console.log(asciiToStr(arr));
 // 39. Implement the Caesar cypher
-let text = "Le Minh That";
-let cyperCaesar = (str, shift) => {
-    return str.split("").map(char => {
-        let code = char.charCodeAt(0);
-        if (code >= 65 && code <= 90) {
-            code = ((code - 65 + shift) % 26) + 65;
-        } else if (code >= 97 && code <= 122) {
-            code = ((code - 97 + shift) % 26) + 97;
-        }
-        return String.fromCharCode(code);
-    }).join("");
-}
-console.log(cyperCaesar(text, 3));
+// let text = "Le Minh That";
+// let cyperCaesar = (str, shift) => {
+//     return str.split("").map(char => {
+//         let code = char.charCodeAt(0);
+//         if (code >= 65 && code <= 90) {
+//             code = ((code - 65 + shift) % 26) + 65;
+//         } else if (code >= 97 && code <= 122) {
+//             code = ((code - 97 + shift) % 26) + 97;
+//         }
+//         return String.fromCharCode(code);
+//     }).join("");
+// }
+// console.log(cyperCaesar(text, 3));
 // 40. Implement the bubble sort algorithm for an array of numbers
+let arr = [43,234,3423,658,234765,768,21,56,8,9,3,12321,4566,324,843  ];
+let bubbleSort = (arr) => {
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(bubbleSort(arr));
 // 41. Create a function to calculate the distance between two points defined by their x, y
 // coordinates
 // 42. Create a function that will return a Boolean value indicating if two circles
