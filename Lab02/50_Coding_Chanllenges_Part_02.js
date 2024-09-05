@@ -148,22 +148,30 @@
 // console.log(distance(arr[0], arr[2]));
 // console.log(distance(arr[1], arr[2]));
 // 42. Create a function that will return a Boolean value indicating if two circles defined by center coordinates and radius are intersecting
- let circle1 = {
-     center: [1, 1],
-     radius: 3
- };
-  let circle2 = {
-      center: [2, 3],
-      radius: 2
-  };
-  let areIntersecting = (circle1, circle2) => {
-      let distance = Math.sqrt((circle1.center[0] - circle2.center[0]) ** 2 + (circle1.center[1] - circle2.center[1]) ** 2);
-      return distance < circle1.radius + circle2.radius;
-  }
-  console.log(areIntersecting(circle1, circle2));
-// 43. Create a function that will receive a bi-dimensional array as argument and a
-// number and will extract as a unidimensional array the column specified by the
-// number
+//  let circle1 = {
+//      center: [1, 1],
+//      radius: 3
+//  };
+//   let circle2 = {
+//       center: [2, 3],
+//       radius: 2
+//   };
+//   let areIntersecting = (circle1, circle2) => {
+//       let distance = Math.sqrt((circle1.center[0] - circle2.center[0]) ** 2 + (circle1.center[1] - circle2.center[1]) ** 2);
+//       return distance < circle1.radius + circle2.radius;
+//   }
+//   console.log(areIntersecting(circle1, circle2));
+// 43. Create a function that will receive a bi-dimensional array as argument and a number and will extract as a unidimensional array the column specified by the number
+let arr = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+let extractColumn = (arr, col) => {
+    return arr.map(row => row[col]);
+}
+console.log(extractColumn(arr, 1));
+
 // 44. Create a function that will convert a string containing a binary number into a
 // number
 // 45. Create a function to calculate the sum of all the numbers in a jagged array
