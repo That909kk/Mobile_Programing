@@ -68,12 +68,17 @@
 //  console.log(capitalizeFirstLetter(text));
  
 // 33. Calculate the sum of numbers received in a comma delimited string
-let text = "1,2,3,4,5,6,7,8,9,10";
-let sumchuoi = (string) => {
-    return string.split(",").reduce((acc, cur) => acc + Number(cur), 0);
-}
-console.log(sumchuoi(text));
+// let text = "1,2,3,4,5,6,7,8,9,10";
+// let sumchuoi = (string) => {
+//     return string.split(",").reduce((acc, cur) => acc + Number(cur), 0);
+// }
+// console.log(sumchuoi(text));
 // 34. Create a function that returns an array with words inside a text.
+let text = "Le Minh That";
+let arrWords = (str) => {
+    return str.split(" ");
+};
+console.log(arrWords(text));
 // 35. Create a function to convert a CSV text to a “bi-dimensional” array
 // 36. Create a function that converts a string to an array of characters
 // 37. Create a function that will convert a string in an array containing the ASCII codes of each character
