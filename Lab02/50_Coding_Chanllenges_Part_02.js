@@ -55,13 +55,20 @@
 // console.log(Str);
 // console.log(typeof(Str));
 // 31. Create a function that will return the number of words in a text
-let numOfText = (str) => {
-    return str.split(" ").length;
-};
-let text ="Le Minh That";
-console.log(numOfText(text));
+// let numOfText = (str) => {
+//     return str.split(" ").length;
+// };
+// let text ="Le Minh That";
+// console.log(numOfText(text));
 // 32. Create a function that will capitalize the first letter of each word in a text
+ let text="le minh that";
+ function capitalizeFirstLetter(string) {
+    return string.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+ }
+ console.log(capitalizeFirstLetter(text));
+ 
 // 33. Calculate the sum of numbers received in a comma delimited string
+
 // 34. Create a function that returns an array with words inside a text.
 // 35. Create a function to convert a CSV text to a “bi-dimensional” array
 // 36. Create a function that converts a string to an array of characters
