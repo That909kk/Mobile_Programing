@@ -119,22 +119,34 @@
 // }
 // console.log(cyperCaesar(text, 3));
 // 40. Implement the bubble sort algorithm for an array of numbers
-let arr = [43,234,3423,658,234765,768,21,56,8,9,3,12321,4566,324,843  ];
-let bubbleSort = (arr) => {
-    for (let i = 0; i < arr.length - 1; i++) {
-        for (let j = 0; j < arr.length - 1 - i; j++) {
-            if (arr[j] > arr[j + 1]) {
-                let temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-    }
-    return arr;
+// let arr = [43,234,3423,658,234765,768,21,56,8,9,3,12321,4566,324,843  ];
+// let bubbleSort = (arr) => {
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         for (let j = 0; j < arr.length - 1 - i; j++) {
+//             if (arr[j] > arr[j + 1]) {
+//                 let temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//             }
+//         }
+//     }
+//     return arr;
+// }
+// console.log(bubbleSort(arr));
+// 41. Create a function to calculate the distance between two points defined by their x, y coordinates
+let arr = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+];
+let distance = (point1, point2) => {
+    let x = point1[0] - point2[0];
+    let y = point1[1] - point2[1];
+    return Math.sqrt(x * x + y * y);
 }
-console.log(bubbleSort(arr));
-// 41. Create a function to calculate the distance between two points defined by their x, y
-// coordinates
+console.log(distance(arr[0], arr[1]));
+console.log(distance(arr[0], arr[2]));
+console.log(distance(arr[1], arr[2]));
 // 42. Create a function that will return a Boolean value indicating if two circles
 // defined by center coordinates and radius are intersecting
 // 43. Create a function that will receive a bi-dimensional array as argument and a
