@@ -99,12 +99,25 @@
 // };
 // console.log(strToASCII(text));
 // 38. Create a function that will convert an array containing ASCII codes in a string
-let arr = [76, 101, 32, 77, 105, 110, 104, 32, 84, 104, 97, 116];
-let asciiToStr = (arr) => {
-    return arr.map(code => String.fromCharCode(code)).join("");
-};
-console.log(asciiToStr(arr));
+// let arr = [76, 101, 32, 77, 105, 110, 104, 32, 84, 104, 97, 116];
+// let asciiToStr = (arr) => {
+//     return arr.map(code => String.fromCharCode(code)).join("");
+// };
+// console.log(asciiToStr(arr));
 // 39. Implement the Caesar cypher
+let text = "Le Minh That";
+let cyperCaesar = (str, shift) => {
+    return str.split("").map(char => {
+        let code = char.charCodeAt(0);
+        if (code >= 65 && code <= 90) {
+            code = ((code - 65 + shift) % 26) + 65;
+        } else if (code >= 97 && code <= 122) {
+            code = ((code - 97 + shift) % 26) + 97;
+        }
+        return String.fromCharCode(code);
+    }).join("");
+}
+console.log(cyperCaesar(text, 3));
 // 40. Implement the bubble sort algorithm for an array of numbers
 // 41. Create a function to calculate the distance between two points defined by their x, y
 // coordinates
