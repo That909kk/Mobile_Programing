@@ -215,21 +215,32 @@
 // }
 // console.log(shuffle(arr));
 // 50. Create a function that will receive n as argument and return an array of n random numbers from 1 to n. The numbers should be unique inside the array.
-let n = 100;
-let randomNumbers = (n) => {
-    let arr = [];
-    for (let i = 1; i <= n; i++) {
-        arr.push(i);
+// let n = 100;
+// let randomNumbers = (n) => {
+//     let arr = [];
+//     for (let i = 1; i <= n; i++) {
+//         arr.push(i);
+//     }
+//     for (let i = arr.length - 1; i > 0; i--) {
+//         let j = Math.floor(Math.random() * (i + 1));
+//         [arr[i], arr[j]] = [arr[j], arr[i]];
+//     }
+//     return arr;
+// }
+// console.log(randomNumbers(n));
+// 51. Find the frequency of letters inside a string. Return the result as an array of arrays. Each subarray has 2 elements: letter and number of occurrences.
+let text = "Le Minh That";
+let frequencyLetters = (str) => {
+    let obj = {};
+    for (let char of str) {
+        if (char !== " ") {
+            obj[char] = obj[char] ? obj[char] + 1 : 1;
+        }
     }
-    for (let i = arr.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    return arr;
+    return Object.entries(obj);
 }
-console.log(randomNumbers(n));
-// 51. Find the frequency of letters inside a string. Return the result as an array of
-// arrays. Each subarray has 2 elements: letter and number of occurrences.
+frequencyLetters(text).forEach(arr => console.log(arr));
+
 // 52. Calculate Fibonacci(500) with high precision (all digits)
 // 53. Calculate 70! with high precision (all digits)
 
