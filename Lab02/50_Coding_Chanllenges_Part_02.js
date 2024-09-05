@@ -87,12 +87,18 @@
 // csvToBiArray(text).forEach(row => console.log(row));
 // console.log(csvToBiArray(text));
 // 36. Create a function that converts a string to an array of characters
-let text = "Le Minh That";
-let strToArr = (str) => {
-    return str.split("");
-};
-console.log(strToArr(text));
+// let text = "Le Minh That";
+// let strToArr = (str) => {
+//     return str.split("");
+// };
+// console.log(strToArr(text));
 // 37. Create a function that will convert a string in an array containing the ASCII codes of each character
+let text = "Le Minh That";
+let strToASCII = (str) => {
+    return str.split("").map(char => char.charCodeAt(0));
+};
+console.log(strToASCII(text));
+
 // 38. Create a function that will convert an array containing ASCII codes in a string
 // 39. Implement the Caesar cypher
 // 40. Implement the bubble sort algorithm for an array of numbers
