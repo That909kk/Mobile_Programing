@@ -1,11 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
-import YourApp from './screens/Screen1';
-
+import Screen1 from './screens/Screen1';
+import Screen2 from './screens/Screen2';
 const App = () => {
   return (
     <View style={{ flex: 1 }}>
-      <YourApp />
+      {/* <Screen1/> */}
+      <Screen2/>
     </View>
   );
 };
