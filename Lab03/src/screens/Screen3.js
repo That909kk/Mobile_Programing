@@ -15,7 +15,7 @@ const stylebtn = {
         color: '#000000',
     }
 };
-const Screen2 = () => {
+const Screen3 = () => {
     return (
         <LinearGradient
             colors={['#C7F4F7', '#D1F4F6', '#E5F4F5', '#00CCF9']}
@@ -103,4 +103,4 @@ const Screen2 = () => {
     );
 };
 
-export default Screen2;
+export default Screen3;
