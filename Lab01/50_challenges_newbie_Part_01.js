@@ -24,12 +24,17 @@
     // }
     // console.log(sum);
 // 6. Calculate 10! 
-let a = 1;
-for (let i = 1; i <= 10; i++) {
-    a*= i;
-}
-console.log(a);
+// let a = 1;
+// for (let i = 1; i <= 10; i++) {
+//     a*= i;
+// }
+// console.log(a);
 // 7. Calculate the sum of even numbers greater than 10 and less than 30 
+let sum = 0;
+for (let i = 11; i < 30; i += 2) {
+    sum += i;
+}
+console.log(sum);
 // 8. Create a function that will convert from Celsius to Fahrenheit 
 // 9. Create a function that will convert from Fahrenheit to Celsius 
 // 10. Calculate the sum of numbers in an array of numbers 
