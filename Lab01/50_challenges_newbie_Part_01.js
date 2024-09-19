@@ -73,18 +73,25 @@
 // }
 // console.log(max);
 // 14. Print the first 10 Fibonacci numbers without recursion 
-let a = 0;
-let b = 1;
-let c;
-console.log(a);
-console.log(b);
-for (let i = 3; i <= 10; i++) {
-    c = a + b;
-    console.log(c);
-    a = b;
-    b = c;
+// let a = 0;
+// let b = 1;
+// let c;
+// console.log(a);
+// console.log(b);
+// for (let i = 3; i <= 10; i++) {
+//     c = a + b;
+//     console.log(c);
+//     a = b;
+//     b = c;
+// }
+// 15. Create a function that will find the nth Fibonacci number using recursion
+let fi = (n) => {
+    if (n === 1 || n === 2) {
+        return 1;
+    }
+    return fi(n - 1) + fi(n - 2);
 }
-// 15. Create a function that will find the nth Fibonacci number using recursion 
+console.log(fi(10));
 // 16. Create a function that will return a Boolean specifying if a number is prime 
 // 17. Calculate the sum of digits of a positive integer number 
 // 18. Print the first 100 prime numbers 
