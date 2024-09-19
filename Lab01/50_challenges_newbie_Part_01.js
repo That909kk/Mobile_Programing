@@ -140,11 +140,17 @@
 // numbers.push(first);
 // console.log(numbers);
 // 21. Rotate an array to the right 1 position 
-let numbers = [1, 2, 3, 4, 5];
-let last = numbers.pop();
-numbers.unshift(last);
-console.log(numbers);
+// let numbers = [1, 2, 3, 4, 5];
+// let last = numbers.pop();
+// numbers.unshift(last);
+// console.log(numbers);
 // 22. Reverse an array 
+let numbers = [1, 2, 3, 4, 5];
+let reversed = [];
+for (let i = numbers.length - 1; i >= 0; i--) {
+    reversed.push(numbers[i]);
+}
+console.log(reversed);
 // 23. Reverse a string 
 // 24. Create a function that will merge two arrays and return the result as a new array 
 // 25. Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both 
