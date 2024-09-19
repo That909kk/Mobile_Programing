@@ -135,11 +135,15 @@
 //     n++;
 // }
 // 19. Create a function that will return in an array the first “p” prime numbers greater than “n” 20. Rotate an array to the left 1 position 
-let numbers = [1, 2, 3, 4, 5];
-let first = numbers.shift();
-numbers.push(first);
-console.log(numbers);
+// let numbers = [1, 2, 3, 4, 5];
+// let first = numbers.shift();
+// numbers.push(first);
+// console.log(numbers);
 // 21. Rotate an array to the right 1 position 
+let numbers = [1, 2, 3, 4, 5];
+let last = numbers.pop();
+numbers.unshift(last);
+console.log(numbers);
 // 22. Reverse an array 
 // 23. Reverse a string 
 // 24. Create a function that will merge two arrays and return the result as a new array 
