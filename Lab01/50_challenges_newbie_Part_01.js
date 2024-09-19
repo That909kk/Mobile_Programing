@@ -145,13 +145,19 @@
 // numbers.unshift(last);
 // console.log(numbers);
 // 22. Reverse an array 
-let numbers = [1, 2, 3, 4, 5];
-let reversed = [];
-for (let i = numbers.length - 1; i >= 0; i--) {
-    reversed.push(numbers[i]);
+// let numbers = [1, 2, 3, 4, 5];
+// let reversed = [];
+// for (let i = numbers.length - 1; i >= 0; i--) {
+//     reversed.push(numbers[i]);
+// }
+// console.log(reversed);
+// 23. Reverse a string 
+let str = "Hello";
+let reversed = "";
+for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
 }
 console.log(reversed);
-// 23. Reverse a string 
 // 24. Create a function that will merge two arrays and return the result as a new array 
 // 25. Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both 
 // 26. Create a function that will receive two arrays and will return an array with elements that are in the first array but not in the second
