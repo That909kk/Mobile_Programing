@@ -114,27 +114,31 @@
 // }
 // console.log(sum);
 // 18. Print the first 100 prime numbers 
-let isPrime = (n) => {
-    if (n < 2) {
-        return false;
-    }
-    for (let i = 2; i <= Math.sqrt(n); i++) {
-        if (n % i === 0) {
-            return false;
-        }
-    }
-    return true;
-}
-let count = 0;
-let n = 2;
-while (count < 100) {
-    if (isPrime(n)) {
-        console.log(n);
-        count++;
-    }
-    n++;
-}
+// let isPrime = (n) => {
+//     if (n < 2) {
+//         return false;
+//     }
+//     for (let i = 2; i <= Math.sqrt(n); i++) {
+//         if (n % i === 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// let count = 0;
+// let n = 2;
+// while (count < 100) {
+//     if (isPrime(n)) {
+//         console.log(n);
+//         count++;
+//     }
+//     n++;
+// }
 // 19. Create a function that will return in an array the first “p” prime numbers greater than “n” 20. Rotate an array to the left 1 position 
+let numbers = [1, 2, 3, 4, 5];
+let first = numbers.shift();
+numbers.push(first);
+console.log(numbers);
 // 21. Rotate an array to the right 1 position 
 // 22. Reverse an array 
 // 23. Reverse a string 
