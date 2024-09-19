@@ -30,12 +30,16 @@
 // }
 // console.log(a);
 // 7. Calculate the sum of even numbers greater than 10 and less than 30 
-let sum = 0;
-for (let i = 11; i < 30; i += 2) {
-    sum += i;
-}
-console.log(sum);
+// let sum = 0;
+// for (let i = 11; i < 30; i += 2) {
+//     sum += i;
+// }
+// console.log(sum);
 // 8. Create a function that will convert from Celsius to Fahrenheit 
+let celsiusToFahrenheit = (celsius) => {
+    return celsius * 1.8 + 32;
+}
+console.log(celsiusToFahrenheit(32));
 // 9. Create a function that will convert from Fahrenheit to Celsius 
 // 10. Calculate the sum of numbers in an array of numbers 
 // 11. Calculate the average of the numbers in an array of numbers 
