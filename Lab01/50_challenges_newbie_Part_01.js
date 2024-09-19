@@ -11,13 +11,18 @@
 //     console.log(`7 * ${i} = ${7 * i}`);
 // }
 // 4. Print all the multiplication tables with numbers from 1 to 10 
-for (let i = 1; i <= 10; i++) {
-    console.log(`Bảng cửu Chương ${i}`);
-    for (let j = 1; j <= 10; j++) {
-        console.log(`${i} * ${j} = ${i * j}`);
-    }
-}
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`Bảng cửu Chương ${i}`);
+//     for (let j = 1; j <= 10; j++) {
+//         console.log(`${i} * ${j} = ${i * j}`);
+//     }
+// }
 // 5. Calculate the sum of numbers from 1 to 10 
+    let sum = 0;
+    for (let i = 1; i <= 10; i++) {
+        sum += i;
+    }
+    console.log(sum);
 // 6. Calculate 10! 
 // 7. Calculate the sum of even numbers greater than 10 and less than 30 
 // 8. Create a function that will convert from Celsius to Fahrenheit 
