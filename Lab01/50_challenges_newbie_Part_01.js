@@ -53,13 +53,16 @@
 // }
 // console.log(sum);
 // 11. Calculate the average of the numbers in an array of numbers 
-let sum = 0;
-let numbers = [1, 2, 3, 4, 5];
-for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-}
-console.log(sum / numbers.length);
+// let sum = 0;
+// let numbers = [1, 2, 3, 4, 5];
+// for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+// }
+// console.log(sum / numbers.length);
 // 12. Create a function that receives an array of numbers as argument and returns an array containing only the positive numbers 
+let numbers = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+let pos = numbers.filter(number => number >= 0);
+console.log(pos);
 // 13. Find the maximum number in an array of numbers 
 // 14. Print the first 10 Fibonacci numbers without recursion 
 // 15. Create a function that will find the nth Fibonacci number using recursion 
