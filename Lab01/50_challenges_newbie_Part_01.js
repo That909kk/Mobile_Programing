@@ -85,14 +85,26 @@
 //     b = c;
 // }
 // 15. Create a function that will find the nth Fibonacci number using recursion
-let fi = (n) => {
-    if (n === 1 || n === 2) {
-        return 1;
-    }
-    return fi(n - 1) + fi(n - 2);
-}
-console.log(fi(10));
+// let fi = (n) => {
+//     if (n === 1 || n === 2) {
+//         return 1;
+//     }
+//     return fi(n - 1) + fi(n - 2);
+// }
+// console.log(fi(10));
 // 16. Create a function that will return a Boolean specifying if a number is prime 
+let isPrime = (n) => {
+    if (n < 2) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isPrime(17));
 // 17. Calculate the sum of digits of a positive integer number 
 // 18. Print the first 100 prime numbers 
 // 19. Create a function that will return in an array the first “p” prime numbers greater than “n” 20. Rotate an array to the left 1 position 
