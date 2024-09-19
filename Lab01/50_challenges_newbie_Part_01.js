@@ -159,9 +159,24 @@
 // }
 // console.log(reversed);
 // 24. Create a function that will merge two arrays and return the result as a new array 
+// let merge = (arr1, arr2) => {
+//     return arr1.concat(arr2);
+// }
+// console.log(merge([1, 2, 3], [4, 5, 6]));
+// 25. Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both
 let merge = (arr1, arr2) => {
-    return arr1.concat(arr2);
+    let result = [];
+    for (let i = 0; i < arr1.length; i++) {
+        if (!arr2.includes(arr1[i])) {
+            result.push(arr1[i]);
+        }
+    }
+    for (let i = 0; i < arr2.length; i++) {
+        if (!arr1.includes(arr2[i])) {
+            result.push(arr2[i]);
+        }
+    }
+    return result;
 }
-console.log(merge([1, 2, 3], [4, 5, 6]));
-// 25. Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both 
+console.log(merge([1, 2, 3], [2, 3, 4])); 
 // 26. Create a function that will receive two arrays and will return an array with elements that are in the first array but not in the second
