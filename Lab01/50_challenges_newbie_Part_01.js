@@ -36,11 +36,15 @@
 // }
 // console.log(sum);
 // 8. Create a function that will convert from Celsius to Fahrenheit 
-let celsiusToFahrenheit = (celsius) => {
-    return celsius * 1.8 + 32;
-}
-console.log(celsiusToFahrenheit(32));
+// let celsiusToFahrenheit = (celsius) => {
+//     return celsius * 1.8 + 32;
+// }
+// console.log(celsiusToFahrenheit(32));
 // 9. Create a function that will convert from Fahrenheit to Celsius 
+let fahrenheitToCelsius = (fahrenheit) => {
+    return (fahrenheit - 32) / 1.8;
+}
+console.log(fahrenheitToCelsius(89.6));
 // 10. Calculate the sum of numbers in an array of numbers 
 // 11. Calculate the average of the numbers in an array of numbers 
 
