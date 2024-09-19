@@ -64,15 +64,26 @@
 // let pos = numbers.filter(number => number >= 0);
 // console.log(pos);
 // 13. Find the maximum number in an array of numbers 
-let numbers = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-let max = numbers[0];
-for (let i = 1; i < numbers.length; i++) {
-    if (numbers[i] > max) {
-        max = numbers[i];
-    }
-}
-console.log(max);
+// let numbers = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+// let max = numbers[0];
+// for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] > max) {
+//         max = numbers[i];
+//     }
+// }
+// console.log(max);
 // 14. Print the first 10 Fibonacci numbers without recursion 
+let a = 0;
+let b = 1;
+let c;
+console.log(a);
+console.log(b);
+for (let i = 3; i <= 10; i++) {
+    c = a + b;
+    console.log(c);
+    a = b;
+    b = c;
+}
 // 15. Create a function that will find the nth Fibonacci number using recursion 
 // 16. Create a function that will return a Boolean specifying if a number is prime 
 // 17. Calculate the sum of digits of a positive integer number 
