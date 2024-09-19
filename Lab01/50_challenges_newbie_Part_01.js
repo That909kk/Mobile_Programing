@@ -60,10 +60,18 @@
 // }
 // console.log(sum / numbers.length);
 // 12. Create a function that receives an array of numbers as argument and returns an array containing only the positive numbers 
-let numbers = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-let pos = numbers.filter(number => number >= 0);
-console.log(pos);
+// let numbers = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+// let pos = numbers.filter(number => number >= 0);
+// console.log(pos);
 // 13. Find the maximum number in an array of numbers 
+let numbers = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+let max = numbers[0];
+for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+        max = numbers[i];
+    }
+}
+console.log(max);
 // 14. Print the first 10 Fibonacci numbers without recursion 
 // 15. Create a function that will find the nth Fibonacci number using recursion 
 // 16. Create a function that will return a Boolean specifying if a number is prime 
