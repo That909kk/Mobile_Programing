@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View, Pressable, Image, TextInput } from 'react-native';
-import { useState } from 'react';
+import { useState,useEffect } from 'react'
+import { useNavigation,useRoute } from '@react-navigation/native';
 const stylebtn = {
     buttonNext: {
         flexDirection: 'row',
@@ -51,7 +52,21 @@ const stylebtn = {
         color: '#F9F2F2',
     },
 };
+
 const YourApp = () => {
+    const route = useRoute();
+    const navigation = useNavigation();
+
+    const [currentImage, setCurrentImage] = useState(require('../assets/BlueSC.png'));
+    const handleChonMauPress = () => {
+        navigation.navigate('ProductDetail', {currentImage});
+    };
+    useEffect(() => {
+        if (route.params?.seclectedImage) {
+            setCurrentImage(route.params.seclectedImage);
+        }
+    }, [route.params?.seclectedImage]);
+  
     return (
         <View  style={{
             flex:1
@@ -63,7 +78,7 @@ const YourApp = () => {
                 alignItems: 'center',
             }}
             >
-                <Image source={require('../assets/BlueSC.png')} style={{
+                <Image source={ currentImage} style={{
                     width: 301, height: 361}}/>
             </View>
             <View style={{
@@ -188,7 +203,7 @@ const YourApp = () => {
                 flex:1,
             }}
             >
-                <Pressable style={stylebtn.buttonNext}>
+                <Pressable style={stylebtn.buttonNext} onPress={handleChonMauPress}>
                     <Text style={stylebtn.textNext}>4 MÀU-CHỌN MÀU</Text>
                     <Image source={require('../assets/arrow.png')} style={{
                         width: 20, height: 20, marginRight: 10}}
