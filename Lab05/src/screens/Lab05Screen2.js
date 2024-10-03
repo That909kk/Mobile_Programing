@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, Image, Pressable } from "react-native";
 import { useState,useEffect } from "react";
-import { useRoute, useNavigation } from '@react-navigation/native';
+import { useRoute, useNavigation,useFocusEffect } from '@react-navigation/native';
 const style = {
     buttonXanh: {
         width: 85,
@@ -70,8 +70,13 @@ const YourApp = () => {
     const handleXongPress = () => {
         navigation.navigate('Product', { seclectedImage: currentImage });
     }
-    
-
+    useFocusEffect(
+        React.useCallback(() => {
+            if (route.params?.currentImage) {
+                setCurrentImage(route.params.currentImage);
+            }
+        }, [route.params?.currentImage])
+    );
     return (
         <View style={{
             flex: 1
